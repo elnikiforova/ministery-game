@@ -7,6 +7,8 @@ import { HomeComponent } from './components/home/home.component';
 import { MinZKHComponent } from './components/min-zkh/min-zkh.component';
 import { MinGORComponent } from './components/min-gor/min-gor.component';
 import { MinFINComponent } from './components/min-fin/min-fin.component';
+import { IntroComponent } from './components/intro/intro.component';
+import { WaveComponent } from './components/wave/wave.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { MinFINComponent } from './components/min-fin/min-fin.component';
     HomeComponent,
     MinZKHComponent,
     MinGORComponent,
-    MinFINComponent
+    MinFINComponent,
+    IntroComponent,
+    WaveComponent
   ],
   imports: [
     BrowserModule,

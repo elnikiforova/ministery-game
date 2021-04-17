@@ -1,2 +1,11 @@
-<p>home works!</p>
-<router-outlet></router-outlet>
+<button (click)="playAudio()">Слушать еще раз</button>
+
+<app-wave *ngIf="wave"></app-wave>
+
+<img src="/assets/images/M-0+M123.jpeg" />
+
+<div class="button-wrapper">
+  <button routerLink="/minzkh">MinZKH</button>
+  <button routerLink="/mingor">MinGor</button>
+  <button routerLink="/minfin">MinFIN</button>
+</div>

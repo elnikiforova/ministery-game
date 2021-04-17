@@ -1,1 +1,68 @@
-<p>min-fin works!</p>
+<button routerLink="/home">Вернуться к губернатору</button>
+
+<p>Примите взвешенное решение</p>
+
+<img src="/assets/pics/M-3-Lady.png" />
+
+<img src="/assets/pics/M-3-Plan.png" />
+
+<img src="/assets/images/M-1-Task-Vesy-0.jpeg" />
+
+<img src="/assets/images/M-1-Task-Seif.jpeg" />
+
+<button (click)="onReset()">Попробовать еще раз</button>
+
+<div class="task-wrapper">
+  <p>Поделите дебет к кредиту</p>
+
+  <p>Бюджет: {{sum}}</p>
+
+  <table class="ui table celled">
+
+    <thead>
+      <tr>
+        <th>Расходы</th>
+        <th>Доходы</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>
+          <input type="text" (input)="onInput($event.target.value)">
+          Благоустройство
+        </td>
+        <td>
+          <input type="text" (input)="onInput($event.target.value)">
+          Транш из федерального бюджета
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="text" (input)="onInput($event.target.value)">
+          Образование
+        </td>
+        <td>
+          <input type="text" (input)="onInput($event.target.value)">
+          Налоги
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input type="text" (input)="onInput($event.target.value)">
+          Транспорт
+        </td>
+        <td>
+          <input type="text" (input)="onInput($event.target.value)">
+          Продажа сырья
+        </td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>
