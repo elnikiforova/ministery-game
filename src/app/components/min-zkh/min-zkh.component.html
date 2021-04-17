@@ -1,15 +1,29 @@
-<button routerLink="/home">Вернуться к губернатору</button>
+<div class="ui container raised very padded segment my-container">
 
-<button (click)="playAudio()">Слушать еще раз</button>
+  <div class="audio-wrapper">
+    <button routerLink="/home" class="ui violet basic button">Вернуться к губернатору</button>
+    <button (click)="playAudio(mySwitch)" class="ui violet basic button">Слушать еще раз</button>
+    <app-wave *ngIf="wave"></app-wave>
+    <!-- <h3>Найдите проблему и ее решение</h3> -->
+  </div>
 
-<app-wave *ngIf="wave"></app-wave>
+  <div class="wrapper">
 
-<div class="wrapper">
+    <img class="bg" src="/assets/pics/M-1-root.png">
 
-  <img class="bg" src="/assets/pics/M-1-root.png">
+    <div class="stage">
+      <img class="minzkh box bounce-5" src="/assets/pics/M-1.png">
+    </div>
 
-  <div class="stage">
-    <img class="minzkh box bounce-5" src="/assets/pics/M-1.png">
+  </div>
+
+  <div class="button-wrapper">
+    <button (click)="playAudio(6)" class="ui blue basic button">Посадить деревья</button>
+    <button (click)="playAudio(3)" class="ui blue basic button">Чипировать кошку</button>
+    <button (click)="playAudio(3)" class="ui blue basic button">Чипировать собаку</button>
+    <button (click)="playAudio(5)" class="ui blue basic button">Вырубить деревья</button>
+    <button (click)="playAudio(4)" class="ui blue basic button">Запросить дополнительное финансирование на изучение
+      вопроса</button>
   </div>
 
 </div>

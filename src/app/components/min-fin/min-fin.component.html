@@ -1,68 +1,75 @@
-<button routerLink="/home">Вернуться к губернатору</button>
+<div class="ui container raised very padded segment">
+  <!-- <h3>Поделите дебет к кредиту</h3> -->
 
-<p>Примите взвешенное решение</p>
+  <div class="audio-wrapper">
+    <button routerLink="/home" class="ui blue basic button">Вернуться к губернатору</button>
+    <button (click)="onReset()" class="ui blue basic button">Попробовать еще раз</button>
+    <button (click)="playAudio(mySwitch)" class="ui blue basic button">Послушать еще раз</button>
+    <app-wave *ngIf="wave"></app-wave>
+  </div>
 
-<img src="/assets/pics/M-3-Lady.png" />
+  <!-- <p>Примите взвешенное решение</p> -->
 
-<img src="/assets/pics/M-3-Plan.png" />
+  <div class="image-wrapper">
+    <img src="/assets/pics/M-3-Lady.png" />
+    <img src="/assets/pics/M-3-Plan.png" />
+    <img src="/assets/images/M-1-Task-Vesy-0.jpeg" />
+    <img src="/assets/images/M-1-Task-Seif.jpeg" />
+  </div>
 
-<img src="/assets/images/M-1-Task-Vesy-0.jpeg" />
 
-<img src="/assets/images/M-1-Task-Seif.jpeg" />
+  <div class="task-wrapper">
 
-<button (click)="onReset()">Попробовать еще раз</button>
+    <h2 [ngClass]="{'red': sum < 0}">Бюджет: {{sum}}</h2>
 
-<div class="task-wrapper">
-  <p>Поделите дебет к кредиту</p>
+    <table class="ui table celled">
 
-  <p>Бюджет: {{sum}}</p>
+      <thead>
+        <tr>
+          <th>Расходы</th>
+          <th>Доходы</th>
+        </tr>
+      </thead>
 
-  <table class="ui table celled">
+      <tbody>
 
-    <thead>
-      <tr>
-        <th>Расходы</th>
-        <th>Доходы</th>
-      </tr>
-    </thead>
+        <tr>
+          <td>
+            <input type="text" (input)="onInput($event.target.value)">
+            Благоустройство
+          </td>
+          <td>
+            <input type="text" (input)="onInput($event.target.value)">
+            Транш из федерального бюджета
+          </td>
+        </tr>
 
-    <tbody>
+        <tr>
+          <td>
+            <input type="text" (input)="onInput($event.target.value)">
+            Образование
+          </td>
+          <td>
+            <input type="text" (input)="onInput($event.target.value)">
+            Налоги
+          </td>
+        </tr>
 
-      <tr>
-        <td>
-          <input type="text" (input)="onInput($event.target.value)">
-          Благоустройство
-        </td>
-        <td>
-          <input type="text" (input)="onInput($event.target.value)">
-          Транш из федерального бюджета
-        </td>
-      </tr>
+        <tr>
+          <td>
+            <input type="text" (input)="onInput($event.target.value)">
+            Транспорт
+          </td>
+          <td>
+            <input type="text" (input)="onInput($event.target.value)">
+            Продажа сырья
+          </td>
+        </tr>
 
-      <tr>
-        <td>
-          <input type="text" (input)="onInput($event.target.value)">
-          Образование
-        </td>
-        <td>
-          <input type="text" (input)="onInput($event.target.value)">
-          Налоги
-        </td>
-      </tr>
+      </tbody>
 
-      <tr>
-        <td>
-          <input type="text" (input)="onInput($event.target.value)">
-          Транспорт
-        </td>
-        <td>
-          <input type="text" (input)="onInput($event.target.value)">
-          Продажа сырья
-        </td>
-      </tr>
+    </table>
 
-    </tbody>
-
-  </table>
+  </div>
 
 </div>

@@ -1,0 +1,54 @@
+@import 'semantic-ui-css/semantic.css';
+
+h3 {
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+  width: 70%;
+  height: 600px;
+}
+
+.audio-wrapper {
+  height: 50px;
+}
+
+h2 {
+  margin-top: 20px;
+  color:cornflowerblue;
+  text-align: center;
+}
+
+.red {
+  color: red;
+}
+
+.image-wrapper {
+  /* opacity: .5; */
+  display: flex;
+  flex-direction: row;
+  /* max-height: 70px; */
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+img {
+  max-height: 150px;
+}
+
+.task-wrapper {
+  /* z-index: 999; */
+}
+
+
+
+.button-wrapper {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+

@@ -1,11 +1,17 @@
-<button (click)="playAudio()">Слушать еще раз</button>
+<div class="ui container raised very padded segment">
 
-<app-wave *ngIf="wave"></app-wave>
+  <div class="audio-wrapper">
+    <button (click)="playAudio()" class="ui violet basic button">Слушать еще раз</button>
+    <app-wave *ngIf="wave"></app-wave>
+  </div>
 
-<img src="/assets/images/M-0+M123.jpeg" />
+  <img src="/assets/images/M-0+M123.jpeg" />
 
-<div class="button-wrapper">
-  <button routerLink="/minzkh">MinZKH</button>
-  <button routerLink="/mingor">MinGor</button>
-  <button routerLink="/minfin">MinFIN</button>
+  <div class="button-wrapper">
+    <button routerLink="/minzkh" class="ui blue basic button">Худяев</button>
+    <button routerLink="/mingor" class="ui blue basic button">Середнячков</button>
+    <button routerLink="/minfin" class="ui blue basic button">Толстов</button>
+  </div>
+
+
 </div>

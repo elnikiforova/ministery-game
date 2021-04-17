@@ -1,3 +1,37 @@
+@import 'semantic-ui-css/semantic.css';
+
+img {
+  margin-left: 50px;
+  height: 80%;
+  max-width: 80%;
+}
+
+h3 {
+  text-align: right;
+}
+
+.container {
+  background-color: #CAE6F8;
+  margin-top: 50px;
+  width: 70%;
+  height: 600px;
+}
+
+.audio-wrapper {
+  /* display: flex;
+  justify-content: space-evenly; */
+  height: 50px;
+}
+
+.button-wrapper {
+  margin-left: 30px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .wrapper {
 }
 
@@ -8,8 +42,7 @@
 .minzkh {
   position: absolute;
   top: 260px;
-  left: 20px;
-
+  left: 40px;
   height: 300px;
 }
 
