@@ -44,7 +44,7 @@ p {
 
 /* Set the font, lean the board, position it */
 #board {
-  font-family: "SW5";
+  font-family: "SW2";
   transform: perspective(300px) rotateX(25deg);
   transform-origin: 50% 100%;
   text-align: justify;

@@ -14,7 +14,7 @@ img {
 }
 
 .button-wrapper {
-  width: 90%;
+  max-width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

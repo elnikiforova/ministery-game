@@ -6,14 +6,18 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   styleUrls: ['./intro.component.css']
 })
 export class IntroComponent implements OnInit, OnDestroy {
-  t1: any;
-  t2: any;
-  t3: any;
+  audio: any;
 
   constructor() { }
 
   ngOnInit(): void {
-    this.playAudio(1);
+    // console.log('hhhhh');
+
+    // setTimeout(() => {
+    //   this.playAudio(1);
+    // }, 100)
+
+
 
     // const t1 = setTimeout(() => {
     //   this.playAudio(2);
@@ -36,28 +40,29 @@ export class IntroComponent implements OnInit, OnDestroy {
     // clearTimeout(this.t3);
   }
 
-  playAudio(num) {
-    let audio = new Audio();
+  playAudio(num: number) {
+    this.audio = new Audio();
 
-    switch (num) {
-      case 1:
-        audio.src = '../../assets/VOX/01.mp3';
-        break;
-      case 2:
-        audio.src = '../../assets/VOX/02.mp3';
-        break;
-      case 3:
-        audio.src = '../../assets/VOX/03.mp3';
-        break;
-      case 4:
-        audio.src = '../../assets/VOX/04.mp3';
-        break;
-      default:
-        audio.src = '../../assets/VOX/01.mp3';
-        break;
+    if (num === 1) {
+
+      this.audio.src = '../../assets/VOX/01.mp3';
+
+    } else if (num === 2) {
+
+      this.audio.src = '../../assets/VOX/02.mp3';
+
+    } else if (num === 3) {
+
+      this.audio.src = '../../assets/VOX/03.mp3';
+
+    } else if (num === 4) {
+
+      this.audio.src = '../../assets/VOX/04.mp3';
+
     }
 
-    audio.load();
-    audio.play();
+    this.audio.load();
+    this.audio.play();
+
   }
 }

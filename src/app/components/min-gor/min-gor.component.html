@@ -6,7 +6,7 @@
     <app-wave *ngIf="wave"></app-wave>
   </div>
 
-  <h2 [ngClass]="{'red': sum < 0}">Выбрано: {{sum}} людей</h2>
+  <h2 [ngClass]="{ 'red': sum < 0, 'won': won }">Выбрано: {{sum}} людей</h2>
 
 
   <div class="people-wrapper">
@@ -21,6 +21,22 @@
 
     <div class="person-3" (click)="onMasked()">
       <img src="/assets/new-pics/X8-1.png" />
+    </div>
+
+    <div class="person-4" (click)="onNotMasked()">
+      <img src="/assets/new-pics/X9-0.png" />
+    </div>
+
+    <div class="person-5" (click)="onMasked()">
+      <img src="/assets/new-pics/X7-1.png" />
+    </div>
+
+    <div class="person-6" (click)="onNotMasked()">
+      <img src="/assets/new-pics/X4-0.png" />
+    </div>
+
+    <div class="person-7" (click)="onMasked()">
+      <img src="/assets/new-pics/X3-1.png" />
     </div>
 
   </div>

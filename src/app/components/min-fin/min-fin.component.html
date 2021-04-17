@@ -12,7 +12,7 @@
 
   <div class="image-wrapper">
     <img src="/assets/pics/M-3-Lady.png" />
-    <img src="/assets/pics/M-3-Plan.png" />
+    <!-- <img src="/assets/pics/M-3-Plan.png" /> -->
     <img src="/assets/images/M-1-Task-Vesy-0.jpeg" />
     <img src="/assets/images/M-1-Task-Seif.jpeg" />
   </div>
@@ -35,34 +35,34 @@
 
         <tr>
           <td>
-            <input type="text" (input)="onInput($event.target.value)">
-            Благоустройство
+            <input type="checkbox" value="-23000000" (change)="onInput($event.target.value)">
+            Благоустройство – 23 млн
           </td>
           <td>
-            <input type="text" (input)="onInput($event.target.value)">
-            Транш из федерального бюджета
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            <input type="text" (input)="onInput($event.target.value)">
-            Образование
-          </td>
-          <td>
-            <input type="text" (input)="onInput($event.target.value)">
-            Налоги
+            <input type="checkbox" value="8000000" (change)="onInput($event.target.value)">
+            Транш из федерального бюджета - 8 млн
           </td>
         </tr>
 
         <tr>
           <td>
-            <input type="text" (input)="onInput($event.target.value)">
-            Транспорт
+            <input type="checkbox" value="-15000000" (change)="onInput($event.target.value)">
+            Образование – 15 млн
           </td>
           <td>
-            <input type="text" (input)="onInput($event.target.value)">
-            Продажа сырья
+            <input type="checkbox" value="20000000" (change)="onInput($event.target.value)">
+            Налоги – 20 млн
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox" value="-7000000" (change)="onInput($event.target.value)">
+            Транспорт – 7 млн
+          </td>
+          <td>
+            <input type="checkbox" value="10000000" (change)="onInput($event.target.value)">
+            Продажа сырья – 10 млн
           </td>
         </tr>
 
