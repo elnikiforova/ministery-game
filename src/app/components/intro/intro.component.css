@@ -1,3 +1,6 @@
+@font-face { font-family: "SW2"; src: url("/assets/fonts/SF Distant Galaxy Cyrillic.ttf") format("truetype");}
+@font-face { font-family: "SW5"; src: url("/assets/fonts/StarC 2.otf") format("truetype");}
+
 .star {
   position: absolute;
   width: 1px;
@@ -7,6 +10,7 @@
 
 /* Set the animation, color, size and hide the text */
 .intro {
+    font-family: "SW2";
     position: absolute;
     top: 30%;
     left: 35%;
@@ -15,6 +19,7 @@
     color: rgb(75, 213, 238);
     font-weight: 400;
     font-size: 300%;
+    line-height: 2em;
     opacity: 0;
 }
 
@@ -39,7 +44,7 @@ p {
 
 /* Set the font, lean the board, position it */
 #board {
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-family: "SW5";
   transform: perspective(300px) rotateX(25deg);
   transform-origin: 50% 100%;
   text-align: justify;

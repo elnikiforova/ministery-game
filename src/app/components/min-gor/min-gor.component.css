@@ -1,1 +1,96 @@
-@import 'semantic-ui-css/semantic.css';
+img {
+  margin-left: 50px;
+  height: 80%;
+  max-width: 80%;
+}
+
+h3 {
+  text-align: right;
+}
+
+.container {
+  background-color: #CAE6F8;
+  margin-top: 50px;
+  width: 70%;
+  height: 600px;
+}
+
+.audio-wrapper {
+  /* display: flex;
+  justify-content: space-evenly; */
+  height: 50px;
+}
+
+.wrapper {
+}
+
+.bg {
+  width: 900px;
+}
+
+.person-1 {
+  height: 300px;
+  cursor: pointer;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.person-2 {
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  animation-duration: 2s;
+  animation-name: slidein2;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein2 {
+  from {
+    margin-left: 0%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 100%;
+    width: 100%;
+  }
+}
+
+.person-3 {
+  height: 300px;
+  position: absolute;
+  top: 200;
+  left: 500;
+  cursor: pointer;
+  animation-duration: 4s;
+  animation-name: slidein3;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slidein3 {
+  from {
+    margin-left: 50%;
+    width: 200%;
+  }
+
+  to {
+    margin-left: 100%;
+    width: 100%;
+  }
+}
+

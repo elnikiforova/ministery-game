@@ -15,25 +15,25 @@ export class IntroComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.playAudio(1);
 
-    const t1 = setTimeout(() => {
-      this.playAudio(2);
+    // const t1 = setTimeout(() => {
+    //   this.playAudio(2);
 
-      const t2 = setTimeout(() => {
-        this.playAudio(3);
+    //   const t2 = setTimeout(() => {
+    //     this.playAudio(3);
 
-        const t3 = setTimeout(() => {
-          this.playAudio(4);
-        }, 23000);
+    //     const t3 = setTimeout(() => {
+    //       this.playAudio(4);
+    //     }, 23000);
 
-      }, 6000);
+    //   }, 6000);
 
-    }, 5000);
+    // }, 5000);
   }
 
   ngOnDestroy(): void {
-    clearTimeout(this.t1);
-    clearTimeout(this.t2);
-    clearTimeout(this.t3);
+    // clearTimeout(this.t1);
+    // clearTimeout(this.t2);
+    // clearTimeout(this.t3);
   }
 
   playAudio(num) {

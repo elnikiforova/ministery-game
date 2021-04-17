@@ -1,2 +1,33 @@
-<button routerLink="/home">Back to home</button>
-<p>страница в разработке</p>
+<div class="ui container raised very padded segment my-container">
+
+  <div class="audio-wrapper">
+    <button routerLink="/home" class="ui violet basic button">Вернуться к губернатору</button>
+    <button (click)="playAudio(1)" class="ui violet basic button">Слушать еще раз</button>
+    <app-wave *ngIf="wave"></app-wave>
+  </div>
+
+  <h2 [ngClass]="{'red': sum < 0}">Выбрано: {{sum}} людей</h2>
+
+
+  <div class="people-wrapper">
+
+    <div class="person-1" (click)="onNotMasked()">
+      <img src="/assets/new-pics/X1-0.png" />
+    </div>
+
+    <div class="person-2" (click)="onMasked()">
+      <img src="/assets/new-pics/X5-1.png" />
+    </div>
+
+    <div class="person-3" (click)="onMasked()">
+      <img src="/assets/new-pics/X8-1.png" />
+    </div>
+
+  </div>
+
+
+  <div class="button-wrapper">
+
+  </div>
+
+</div>
